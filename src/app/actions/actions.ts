@@ -5,9 +5,9 @@ import {z} from "zod";
 import fs from 'fs';
 import path from 'path';
 
-const filePathWords = path.resolve(path.join(process.cwd(),'/'), 'agwordlist.txt');
+const filePathWords = path.resolve(path.join(process.cwd(),'/src/app'), 'agwordlist.txt');
 const wordsList = fs.readFileSync(filePathWords, 'utf-8');
-const filePathSyllables = path.resolve(path.join(process.cwd(),'/'), 'agsyllables.txt');
+const filePathSyllables = path.resolve(path.join(process.cwd(),'/src/app'), 'agsyllables.txt');
 const syllablesList = fs.readFileSync(filePathSyllables, 'utf-8');
 export async function createPassword(
   prevState: {
