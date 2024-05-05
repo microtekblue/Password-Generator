@@ -42,7 +42,7 @@ function Selections(props: Props) {
             </div>
             {selectedOption === 'Random' && (
                 <div className="flex flex-wrap mb-2">
-                    <div className="w-1/3 px-3 mb-6 text-left">
+                    <div className="w-full sm:w-1/3 px-3 mb-6 text-left">
                         <input type="checkbox"
                                name="numbers"
                                className="appearance-none inline-block align-middle mr-3 cursor-pointer bg-white checked:bg-green-500 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-green focus:border-white-500"/>
@@ -51,7 +51,7 @@ function Selections(props: Props) {
                             Numbers
                         </label>
                     </div>
-                    <div className="w-1/3 px-3 mb-6 text-left">
+                    <div className="w-full sm:w-1/3 px-3 mb-6 text-left">
                         <input type="checkbox"
                                name="symbols"
                                className="appearance-none inline-block align-middle mr-3 cursor-pointer bg-white checked:bg-green-500 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-green focus:border-white-500"/>
@@ -60,8 +60,8 @@ function Selections(props: Props) {
                             Symbols
                         </label>
                     </div>
-                    <div className="w-1/3 px-3 mb-6 text-left">
-                        <label className="inline-block uppercase tracking-wide text-white-700 text-md mb-2"
+                    <div className="w-full sm:w-1/3 px-3 mb-6 text-left">
+                        <label className="inline-block uppercase tracking-wide text-white-700 text-md mb-2 align-middle mr-2"
                                htmlFor="grid-city">
                             Length: {selectedLength}
                         </label>
@@ -73,7 +73,7 @@ function Selections(props: Props) {
 
             {selectedOption === 'Memorable' && (
                 <div className="flex flex-wrap mb-2">
-                    <div className="w-1/3 px-3 mb-6 text-left">
+                    <div className="w-full sm:w-1/3 px-3 mb-6 text-left">
                         <input type="checkbox"
                                name="capitalize"
                                className="appearance-none inline-block align-middle mr-3 cursor-pointer bg-white checked:bg-green-500 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-green focus:border-white-500"/>
@@ -82,7 +82,7 @@ function Selections(props: Props) {
                             Capitalize
                         </label>
                     </div>
-                    <div className="w-1/3 px-3 mb-6 text-left">
+                    <div className="w-full sm:w-1/3 px-3 mb-6 text-left">
                         <input type="checkbox"
                                name="fullWords"
                                className="appearance-none inline-block align-middle mr-3 cursor-pointer bg-white checked:bg-green-500 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-green focus:border-white-500"/>
@@ -91,8 +91,8 @@ function Selections(props: Props) {
                             Full Words
                         </label>
                     </div>
-                    <div className="w-1/3 px-3 mb-6 text-left">
-                        <label className="inline-block uppercase tracking-wide text-white-700 text-md mb-2"
+                    <div className="w-full sm:w-1/3 px-3 mb-6 text-left">
+                        <label className="inline-block uppercase tracking-wide text-white-700 text-md mb-2 align-middle mr-2"
                                htmlFor="grid-city">
                             Length: {selectedLength}
                         </label>
@@ -106,7 +106,7 @@ function Selections(props: Props) {
             {selectedOption === 'Pin' && (
                 <div className="flex flex-wrap mb-2">
                     <div className="w-full px-3 mb-6 text-left">
-                        <label className="inline-block uppercase tracking-wide text-white-700 text-md mb-2"
+                        <label className="inline-block uppercase tracking-wide text-white-700 text-md mb-2 align-middle mr-2"
                                htmlFor="grid-city">
                             Length: {selectedLength}
                         </label>
